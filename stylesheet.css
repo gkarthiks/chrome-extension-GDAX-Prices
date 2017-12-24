@@ -1,0 +1,71 @@
+div {
+    width: 790px;
+    height: 200px;
+    display: block;
+    position: relative;
+}
+
+div::after {
+    content: "";
+    background: url("gdax2.jpg");
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -10;
+}
+
+#header {
+    text-align: center;
+    color: darkblue;
+}
+#header {
+    -webkit-animation: mymove 1s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 1s infinite;
+}
+
+body {
+    min-width: 800px;
+    position: relative;
+    vertical-align:middle;
+    overflow: hidden;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {text-shadow: 10px 20px 30px rgba(52, 52, 52, 0.57);}
+}
+
+@keyframes mymove {
+    50% {text-shadow: 10px 20px 30px #343434;}
+}
+
+H3 {
+    border: 5px solid #0200a9;
+    padding:  0em 1em;
+    border-radius: 16px;
+    font-size: 24px;
+    line-height: 2;
+}
+
+
+#price td, #price th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#price tr:nth-child(even){background-color: #f2f2f2;}
+
+#price th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #abffac;
+}
+
+table#price {
+    margin-left:auto;
+    margin-right:auto;
+}
